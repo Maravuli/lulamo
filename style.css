@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #f1f5f9;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+nav {
+    background: transparent;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav {
+    background: rgba(2, 6, 23, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+nav.scrolled {
+    background: rgba(2, 6, 23, 0.95);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.card.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(159, 157, 157);
+    transform: scale(1.05);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #38bdf8;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+
+    .skills-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills-list li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .skills-list i {
+        color: #38bdf8;
+        font-size: 18px;
+    }
+
+}
+
+.cert-item {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cert-item h3 {
+    margin-bottom: 5px;
+}
+
+.cert-item p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #060606;
+}
+
+.card h2,
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.soft-skills {
+    list-style: none;
+    padding: 0;
+}
+
+.soft-skills li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.soft-skills i {
+    color: #007BFF;
+    margin-right: 10px;
+}
